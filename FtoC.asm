@@ -1,16 +1,16 @@
   .model small
   .stack 100h
   .data
-    c dw 256
-    f dw ?
+    f dw 1000
+    c dw ?
   
   .code
   main proc
     mov ax, @data
     mov ds, ax
     
-    mov ax, c
-    mov bx, 9
+    mov ax, f
+    mov bx, 32
     mul bx
     
     mov bx,5
